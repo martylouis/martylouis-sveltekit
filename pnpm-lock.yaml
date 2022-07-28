@@ -8,6 +8,7 @@ specifiers:
   '@tailwindcss/typography': ^0.5.3
   '@typescript-eslint/eslint-plugin': ^5.27.0
   '@typescript-eslint/parser': ^5.27.0
+  '@vitejs/plugin-basic-ssl': ^0.1.1
   autoprefixer: ^10.4.7
   eslint: ^8.16.0
   eslint-config-prettier: ^8.3.0
@@ -33,6 +34,7 @@ devDependencies:
   '@tailwindcss/typography': 0.5.4_tailwindcss@3.1.6
   '@typescript-eslint/eslint-plugin': 5.31.0_d5zwcxr4bwkhmuo464cb3a2puu
   '@typescript-eslint/parser': 5.31.0_he2ccbldppg44uulnyq4rwocfa
+  '@vitejs/plugin-basic-ssl': 0.1.1_vite@3.0.3
   autoprefixer: 10.4.7_postcss@8.4.14
   eslint: 8.20.0
   eslint-config-prettier: 8.5.0_eslint@8.20.0
@@ -425,6 +427,15 @@ packages:
     transitivePeerDependencies:
       - encoding
       - supports-color
+    dev: true
+
+  /@vitejs/plugin-basic-ssl/0.1.1_vite@3.0.3:
+    resolution: {integrity: sha512-UhfGAZ8HgIMEPktKF8k58Y1LSwuYs1i1O4HY8E+yiOoYM+rkaPFBZo1SOkRsZN8DZTw90Q+ZznPej1o/mtTisg==}
+    engines: {node: '>=14.6.0'}
+    peerDependencies:
+      vite: ^3.0.0-beta.0
+    dependencies:
+      vite: 3.0.3
     dev: true
 
   /abbrev/1.1.1:
