@@ -4,9 +4,15 @@ import basicSsl from '@vitejs/plugin-basic-ssl';
 /** @type {import('vite').UserConfig} */
 const config = {
   plugins: [sveltekit(), basicSsl()],
+  optimizeDeps: {
+    include: ['axios']
+  },
   server: {
     port: 3000,
     https: true
+  },
+  define: {
+    'process.env': process.env
   }
 };
 
